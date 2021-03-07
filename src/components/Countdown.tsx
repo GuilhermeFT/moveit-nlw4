@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { ChallengesContext } from "../contexts/ChallengesContext";
 import { CountdownContext } from "../contexts/CountdownContext";
-import { CountdownButton, CountdownContainer } from "../styles/components/Countdown";
+import { CountdownButton, CountdownContainer } from "../styles/components/CountDown";
 
 export function CountDown() {
   const { 
