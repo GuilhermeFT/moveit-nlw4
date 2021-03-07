@@ -19,15 +19,7 @@ export function GithubAuthProvider({children}: GithubAuthProviderProps) {
   .auth()
   .signInWithRedirect(provider)
   .then((result) => {
-    /** @type {firebase.auth.OAuthCredential} */
-    var credential = result.;
-
-    // This gives you a GitHub Access Token. You can use it to access the GitHub API.
-    var token = credential.accessToken;
-
-    // The signed-in user info.
-    var user = result.user;
-    // ...
+    
   }).catch((error) => {
     // Handle Errors here.
     var errorCode = error.code;

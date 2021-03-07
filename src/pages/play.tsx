@@ -9,18 +9,9 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   firebase.auth()
   .getRedirectResult()
   .then((result) => {
-    if (result.credential) {
-      /** @type {firebase.auth.OAuthCredential} */
-      var credential = result.credential;
-
-      // This gives you a GitHub Access Token. You can use it to access the GitHub API.
-      var token = credential.accessToken;
-      // ...
-    }
-
-    // The signed-in user info.
-    var user = result.user;
-    console.log({user, token});
+    
+    var user = result;
+    console.log({user});
     
   }).catch((error) => {
     // Handle Errors here.
